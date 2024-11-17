@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.join{
+    background-image: linear-gradient(to bottom,rgb(226, 27, 156) ,blue );
+    -webkit-Background-clip: text;
+    color: transparent;
+}
+ .logo{
+    width: 100px;
+    border-right:2px solid white;
+    background-image: linear-gradient(to left,rgb(167, 169, 26) ,blue );
+    -webkit-Background-clip: text;
+    color: transparent;
+ }
+
+@media (max-width:776px) {
+    .nn{
+        clip-path: none !important;
+        overflow: hidden;
+    }
+}
+@media (max-width:776px) {
+    .ss{
+        clip-path: none !important;
+        overflow: hidden;
+    }
+}
+@media (max-width:776px) {
+    .slideimg{
+      height: 500px;
+}
+}
+.carousover{
+    margin: auto; 
+    width: 800px;  
+    height: 170px; 
+    background-color: rgba(69, 159, 179, 0.4); 
+    border-radius: 7px;
+    }
+@media (max-width:776px) {
+    .carousover{
+      height: 170px;
+      width: 300;
+      margin: auto;
+}
+}
+
+.icons a i:hover{
+    color: rgb(59, 103, 186);
+}
+.icons a i {
+    line-height: 40px;
+    font-size: 40px;
+    color: rgb(117, 175, 200);
+}
+.zzs4{
+    position: relative;
+}
+.zzs4:after{
+    position: absolute;
+    content: "";
+    width:0;
+    height:0;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background-color: rgb(46, 171, 185);
+    transition: 0.5s;
+}
+.zzs4:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 1s;
+}
+
+.zzs4:before{
+    position: absolute;
+    content: "";
+    width:0;
+    height:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    background-color: rgb(46, 171, 185);
+    transition: 0.5s;
+}
+.zzs4:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+   transition: 1s;
+}
+.background{
+    
+    width: 99vw;
+    height: 400; 
+    background-image: url(../images/sea.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.xxx{
+    transition: 0.5s;
+  background-color: rgba(0, 0, 0,0.3);;
+  border-radius: 50px;
+}
+.xxx:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+   border-radius: 50px;
+}
+.xxx{
+    position: relative;
+}
+.xxx:hover .mm{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 147, 185,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.xxx:hover .tt ,.ee,.mm{
+    border-radius: 20px;
+}
+
+
+
+.qq{
+    border-radius: 20px;
+}
+.vv{
+    border: 2px solid rgb(57, 142, 188);
+    border-radius: 8px;
+}
+
+.but:hover{
+    background-color: grey;
+}
+.but{
+    background-color: rgb(221, 221, 221);
+}
+
+
+.hr3{
+    width: 100px;
+    border: 2px solid blue;
+    transition: 0.5s;
+}
+.nnn:hover{
+    background-color: rgb(184, 206, 241);
+}
+.ppp:hover .hr3{
+    transition: 0.5s;
+    width: 150px;
+}
+.hr31{
+    width: 100px;
+    border: 2px solid green;
+    transition: 0.5s;
+}
+.vvv:hover{
+    background-color: rgb(190, 243, 180);
+}
+.QQQ:hover .hr31{
+    transition: 0.5s;
+    width: 150px;
+}
+.hr32{
+    width: 100px;
+    border: 2px solid orange;
+    transition: 0.5s;
+}
+.iii:hover{
+    background-color: rgb(245, 212, 150);
+}
+.ooo:hover .hr32{
+    transition: 0.5s;
+    width: 150px;
+}
+.hr33{
+    width: 100px;
+    border: 2px solid purple;
+    transition: 0.5s;
+}
+.bbb:hover{
+    background-color: plum;
+}
+.ccc:hover .hr33{
+    transition: 0.5s;
+    width: 150px;
+}
+.hr-final{
+    border:2px solid blue;
+}
+
+

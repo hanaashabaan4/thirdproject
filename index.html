@@ -1,0 +1,633 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+    <!-- <HEAD>
+        <TITLE>js</TITLE>
+        
+        <link rel="stylesheet" href="css/all.css">
+      <script src="js/script.js"></script>
+       
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </HEAD> -->
+    <head>
+      <title>third project</title>
+  
+      <link rel="stylesheet" href="css/all.css" />
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+  
+    </head>
+    <body>
+      <!-- nav -->
+      <nav class="navbar navbar-expand-sm navbar-expand-col navbar-dark " style="background-color:rgba(86, 156, 226, 0.5);position: fixed;
+      z-index: 50;
+      width: 100%;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img  src="images/sea.png" alt="Avatar Logo" style="width: 50px" class="rounded-pill" />
+          </a>
+          <a class="navbar-brand  logo" href="javascript:void(0)">SUN&SEA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar" style=" color: rgb(146, 127, 255);">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"> <a class="nav-link text-light" href="javascript:void(0)"  >Home</a > </li>
+              <li class="nav-item"> <a class="nav-link text-light" href="javascript:void(0)" >Link</a > </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link vv dropdown-toggle border text-light"  href="#"  role="button" data-bs-toggle="dropdown" >Trips</a >
+                <ul class="dropdown-menu text-dark">
+                  <li><a class="dropdown-item" href="#">Hurghada</a></li>
+                  <li><a class="dropdown-item" href="#">Sharm El Sheikh</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Dahab</a></li>
+                  <li><a class="dropdown-item" href="#">Alex</a></li>
+                  <li><a class="dropdown-item" href="#">North Coast</a></li>
+                  <li><a class="dropdown-item" href="#">The guna</a></li>
+                  <li><a class="dropdown-item" href="#">more...</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"> <a class="nav-link text-light" href="javascript:void(0)" >About</a > </li>
+            </ul>
+            <form class="d-flex ">
+              <input class="form-control me-2" type="text" placeholder="Search" />
+              <button class="btn btn-primary" type="button">Search</button>
+              <button   type="button" class="btn btn-primary mx-1" data-bs-toggle="modal"  data-bs-target="#exampleModal" data-bs-whatever="@mdo"> login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- end nav -->
+  
+      <!-- modal -->
+      <div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-primary">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="btn-close border" data-bs-dismiss="modal" aria-label="Close" ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label" style="color: rgb(77, 191, 225)" >Email address</label >
+                  <input type="text" class="form-control" id="recipient-name" />
+                  <p style="padding-left: 30; padding-top: 15"> we'll never share your email with anyone else</p>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label"  style="color: rgb(77, 191, 225)" >password</label>
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+              </form>
+              <div class="form-check form-switch">
+                <input class="form-check-input mx-2"  type="checkbox"  id="mySwitch"  name="darkmode"  value="yes" checked />
+                <label  class="form-check-label" for="mySwitch" style="color: rgb(77, 191, 225)"  >Remember Me</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" style="margin-right: 335" >  Login </button>
+              <button type="button" class="btn btn-primary"  data-bs-dismiss="modal" > close </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+  
+      <!-- carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide col-12" style="position: relative;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1" ></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4" ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  src="images/blog149-01 - Copy-1666x555.jpg" class="d-block w-100 slideimg" alt="..." height="700" />
+            <div class="carousel-caption  carousover ">
+              <h2>Guna city</h2>
+              <h4>we love this city</h4>
+              
+              
+              <button class="btn btn-dark">visit us</button>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img src="images/playas-de-hurghada.jpg"  class="d-block w-100 slideimg" alt="..." height="700"  />
+            <div class="carousel-caption  carousover ">
+              <h2 style="text-transform: uppercase;">Hurghada city</h2>
+              <h4>we love this city</h4>
+              <button class="btn btn-dark">visit us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/1c47164c-city-40872-164d27902ce.jpg"  class="d-block w-100 slideimg" alt="..." height="700" />
+            <div class="carousel-caption  carousover ">
+              <h2 style="text-transform: uppercase;" class="text-light">Aswan</h2>
+              <h4 class="text-light">we love this city</h4>
+              <button class="btn btn-dark">visit us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/sharm.jpg"  class="d-block w-100 slideimg" alt="..." height="700" />
+            <div class="carousel-caption  d-col-block carousover " >
+              <h2 style="text-transform: uppercase;">sharm el shikh</h2>
+              <h4>we love this city</h4>
+              <button class="btn btn-dark">visit us</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button  class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"  style="margin-right: 100"  >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end carousel -->
+  
+      <!-- icons -->
+      <div class="icons" style=" position: fixed; z-index: 80; right: 11%; top: 50%;transform: translateY(-50%);">
+        <a  href="" class="text-center d-block rounded-2 mb-3" style="width: 40; " ><i class="fab fa-facebook-square"></i ></a>
+        <a href="" class="text-center d-block rounded-2 mb-3"  style="width: 40; " ><i class="fab fa-whatsapp-square"></i ></a>
+        <a href="" class="text-center d-block rounded-2 mb-3" style="width: 40; "  ><i class="fab fa-twitter-square"></i ></a>
+        <a  href=""  class="text-center d-block rounded-2 mb-3"  style="width: 40; "  ><i class="fab fa-linkedin"></i ></a>
+        <a href="" class="text-center d-block rounded-2 mb-3"  style="width: 40; "  ><i class="fab fa-instagram-square"></i  ></a>
+      </div>
+      <!-- end icons -->
+  
+      <!-- Jumbotron Example -->
+      <div class="mt-4 p-5 text-white rounded"   style="background-color: rgb(60, 115, 198)" >
+        <h1 class="join">Tourist places in Egypt</h1>
+        <p>Tourism in Egypt is considered one of the most important sources of national income, and is distinguished by the abundance of tourist attractions of all kinds.The areas of Luxor, Aswan, Cairo, Alexandria, the North Coast, the Red Sea, and South Sinai are among the most attractive areas for tourists in general.
+        </p>
+        <button type="button" class="btn btn-light">read more</button>
+      </div>
+      <!-- end Jumbotron Example -->
+  
+      <!-- popular destination in egypt  -->
+      <div  class="mt-4 px-3 py-5 text-white rounded"  style="background-color: rgb(60, 115, 198)">
+        <h3 style="text-align: center"> The most famouse tourist places</h3>
+      </div>
+      <!-- end popular destination in egypt  -->
+  
+      <!-- accordion -->
+      <div class="accordion accordion-flush " id="accordionFlushExample">
+        <div class="accordion-item border-5" >
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button  class="accordion-button collapsed"  type="button" data-bs-toggle="collapse"  data-bs-target="#flush-collapseOne"  aria-expanded="false"  aria-controls="flush-collapseOne">
+              Dahab City  </button>  </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse"   aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">  Dahab can be divided into three major parts. Masbat, which includes  the Bedouin village of Asalah, is in the north. South of Masbat is  Mashraba, which is more touristic and has considerably more hotels.  In the southwest is Medina which includes the Laguna area, famous  for its excellent shallow-water kite- and windsurfing, The region of  Asalah is quite developed and has many campsites and hostels. Most  people who have visited Dahab in the past are backpackers interested  in diving and snorkeling in the Red Sea. The town of Dahab counts  around 15,000 inhabitants.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-5">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"  type="button"  data-bs-toggle="collapse"  data-bs-target="#flush-collapseTwo"   aria-expanded="false"  aria-controls="flush-collapseTwo"  >  Hurghada city
+            </button>
+          </h2>
+          <div  id="flush-collapseTwo"  class="accordion-collapse collapse"  aria-labelledby="flush-headingTwo"  data-bs-parent="#accordionFlushExample"  > <div class="accordion-body">
+              Hurghada was founded in the early 20th century. For many decades it  was a small fishing village, but it has grown into a major Red Sea  resort as a result of Egyptian and foreign investment that began in  the 1980s. Holiday resorts and hotels provide facilities for  windsurfing, kitesurfing, yachting, scuba diving and snorkeling. The  city is known for its watersports, nightlife and warm weather.  Daytime temperatures are around 35 °C (95 °F) most of the year, and
+              during July and August temperatures can reach over 46 °C (115  °F).[citation needed] Hurghada is a popular holiday destination for   Europeans, especially during the winter, and some spend Christmas  and New Year there. Hurghada extends for about 36 kilometres (22 mi)  along the coast, but does not reach far into the surrounding desert.  The resort is a destination for Egyptian tourists from Cairo, the  Delta and Upper Egypt, as well as package holiday tourists from  Europe
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item border-5">
+          <h2 class="accordion-header " id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"  >
+              Sharm El Sheikh city </button></h2>
+          <div  id="flush-collapseThree"  class="accordion-collapse collapse"  aria-labelledby="flush-headingThree"  data-bs-parent="#accordionFlushExample" >
+            <div class="accordion-body">
+              in South Sinai Governorate, on the coastal strip along the Red Sea. Its population is approximately 13,000 as of 2023. Sharm El Sheikh is the administrative hub of Egypt's South Sinai Governorate, which
+              includes the smaller coastal towns of Dahab and Nuweiba as well as the mountainous interior, St. Catherine and Mount Sinai. It was historically a fishing town and military base, and was developed
+              into a commercial and tourist-centric city in 1968 by Israel. Today,  the city and holiday resort is a significant centre for tourism in Egypt, while also attracting many international conferences and  diplomatic meetings
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- accordion -->
+  
+      <!-- translation -->
+      <div class="container-fluid bg-primary rounded my-3" style="height: 70px">
+        <h2 class="text-light p-3 text-center">  Translate From Arabic To English</h2>
+      </div>
+      <div  class="container-fluid text-light  rounded py-2 my-2"  style="height: 250px;background-color: rgb(60, 115, 198)" >
+        <p class="p1 ms-2 fs-5"> Write and Translate  <a class="text-dark" style="text-decoration: none" href="" >Press Here</a > </p>
+          
+          <button id="myButton" type="button" class="btn text-light card_alert border my-3" data-bs-toggle="tooltip"
+          data-bs-placement="right" title="coppied">
+          copy </button>
+          
+         
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="form-floating " style="margin-top: 20;">
+          <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2" class="text-dark">Translate:</label>
+        </div>
+      </div>
+      <hr />
+      <div class="container-fluid bg-primary rounded" style="height: 70px">
+        <h2 class="text-light p-3 text-center">  Translate From Arabic To French</h2>
+      </div>
+      <div class="container-fluid text-light  rounded py-2 my-3"  style="height: 250px;background-color: rgb(60, 115, 198)" >
+        <p class="p1 ms-2 fs-5 "> Write and Translate <a class="text-dark" style="text-decoration: none;" href=""  >Press Here</a  ></p>
+           
+        <button id="myButton" type="button" class="btn text-light card_alert border my-3 newTest" data-bs-toggle="tooltip"
+        data-bs-placement="right" title="coppied">
+        copy </button>
+        <div class="form-floating " style="margin-top: 20;">
+          <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2" class="text-dark">Translate:</label>
+        </div>
+      </div>
+      <hr />
+      <div class="container-fluid bg-primary rounded" style="height: 70px">
+        <!-- <h3 class="text-light p-3 text-center"> Translate From Arabic To German  </h3> -->
+        <h3 class="text-light p-3 text-center">  Translate From Arabic To spanish</h3>
+      </div>
+      <div
+        class="container-fluid text-light  rounded my-3"  style="height: 250px;background-color: rgb(60, 115, 198)"  >  <p class="p1 ms-2 fs-5">  Write and Translate
+          <a class="text-dark" style="text-decoration: none;" href="" >Press Here</a ></p> 
+           
+             <button id="myButton" type="button" class="btn text-light card_alert border my-3" data-bs-toggle="tooltip"
+             data-bs-placement="right" title="coppied">
+             copy </button>
+        <div class="form-floating " style="margin-top: 20;">
+          <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2" class="text-dark">Translate:</label>
+        </div>
+      </div> 
+  
+      <hr />
+      <!-- end translation -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <!-- egypt section -->
+      <div  class="mt-4 p-5 text-white rounded" style="background-color: rgb(60, 115, 198)" >
+        <h1 style="text-align: center" class="join">Tourist places  in EGYPT</h1>
+      </div>
+      <div class="container">
+        <div class="row gap-5 mt-5 d-flex justify-content-center">
+          <div class="card zzs4 mb-3  col-md-5 col-xl-3  col-12">
+            <img src="images/sahaba.jpg"  class="card-img-top" alt="..." width="150" height="330" />
+            <div class="card-body">
+              <h5 class="card-title" style="display: inline">Al Sahaba mosque</h5>
+              <button  type="button" class="btn btn-primary mx-2 my-2" style=" --bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 0.75rem; margin-left: 190; margin-top: -25; " >
+                Show more </button>
+              <p class="card-text pt-3">
+                It is one of the mosques in Sharm El Sheikh. It was established in
+                the old commercial market area.
+              </p>
+            </div>
+          </div>
+          <div class="card zzs4 mb-3 ml-5 col-12  col-md-5 col-xl-3  ">
+            <img src="images/marassi.jpg" class="card-img-top" alt="..."  width="200"  height="330" />
+            <div class="card-body">
+              <h5 class="card-title" style="display: inline">Marassi</h5>
+              <button type="button" class="btn btn-primary mx-5 my-2"
+                style="  --bs-btn-padding-y: 0.5rem;  --bs-btn-padding-x: 0.5rem;  --bs-btn-font-size: 0.75rem;  margin-left: 190;  margin-top: -25;  ">
+                Show more</button>
+              <p class="card-text pt-3"> Marassi is an unparalleled coastal destination on the northern Egyptian coast. Marassi includes 5 beaches, and an 18-hole golf</p>
+            </div>
+          </div>
+          <div class="card zzs4 mb-3 col-12  col-md-5 col-xl-3 ">
+            <img   src="images/matrouh.jpg"  class="card-img-top"  alt="..."  width="200"  height="330" />
+            <div class="card-body">
+              <h5 class="card-title" style="display: inline">Matrouh</h5>
+              <button
+                type="button"  class="btn btn-primary mx-5 my-2"  style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 0.75rem; margin-left: 190; margin-top: -25;   " >
+                Show mor
+              </button>
+              <p class="card-text pt-3">  Fayrouz Beach is one of the best tourist and summer destinations,  characterized by clear waters and charming white sand </p>
+            </div>
+          </div>
+          <div class="card zzs4 mb-3 col-12  col-md-5 col-xl-3 ">
+            <img src="images/masbat.jpg"  class="card-img-top" alt="..." width="200" height="330" />
+            <div class="card-body">
+              <h5 class="card-title" style="display: inline">Masbat</h5>
+              <button
+                type="button" class="btn btn-primary mx-5 my-2" style="  --bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.5rem;  --bs-btn-font-size: 0.75rem;  margin-left: 300;   margin-top: -25;">
+                Show more </button>
+              <p class="card-text pt-3">  A major commercial area in Dahab, dotted with restaurants, shops,  resorts, hotels, and diving clubs</p>
+            </div>
+          </div>
+          <div class="card zzs4 mb-3 col-12  col-md-5 col-xl-3  ">
+            <img  src="images/nabq.jpg" class="card-img-top" alt="..."  width="200" height="330" />
+            <div class="card-body">
+              <h5 class="card-title" style="display: inline">Nabq Reserve</h5>
+              <button type="button"  class="btn btn-primary mx-3 my-2" style=" --bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 0.75rem;  margin-left: 190; margin-top: -25; " >
+                Show more </button>
+              <p class="card-text pt-3">One of the best places to go out in Dahab. It is a prominent  reserve that attracts tourists from everywhere  </p>
+            </div>
+          </div>
+          <div class="card zzs4 mb-3 col-12  col-md-5 col-xl-3 ">
+            <img src="images/shark.jpg" class="card-img-top" alt="..." width="200"  height="330" />
+            <div class="card-body">
+              <h5 class="card-title" style="display: inline">Shark Bay</h5>
+              <button type="button"class="btn btn-primary mx-5 my-2" style=" --bs-btn-padding-y: 0.5rem;  --bs-btn-padding-x: 0.5rem;  --bs-btn-font-size: 0.75rem; margin-left: 190; margin-top: -25; " >
+                Show more </button>
+              <p class="card-text pt-3"> It has white sandy beaches and crystal clear waters, making it an ideal place for swimming and snorkeling. </p>
+            </div>
+          </div>
+        </div>
+        <div class="row gap-5 mt-5 d-flex justify-content-center">
+          <div class="card zzs4 mb-3 col-12  col-md-5 col-xl-3 "  style="margin-left: 200" >
+            <img src="images/alex.jpg" class="card-img-top" alt="..."  width="200" height="330" />
+            <div class="card-body">
+              <h5 class="card-title" style="display: inline">Library of Alex</h5>
+              <button type="button"  class="btn btn-primary mx-3 my-2" style=" --bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 0.75rem;  margin-left: 190; margin-top: -25;" >
+                Show more</button>
+              <p class="card-text pt-3"> The Library of Alexandria contains six specialized libraries: the  Arts and Multimedia Library.</p>
+            </div>
+          </div>
+        
+          <div class="card zzs4 mb-3 col-12  col-md-5 col-xl-3 "  style="margin-left: 200" >
+            <img  src="images/soho.jpg"  class="card-img-top" alt="..." width="200"  height="330" />
+            <div class="card-body">
+              <h5 class="card-title" style="display: inline">Soho Square</h5>
+              <button type="button" class="btn btn-primary mx-3 my-2" style=" --bs-btn-padding-y: 0.5rem;  --bs-btn-padding-x: 0.5rem; --bs-btn-font-size: 0.75rem; margin-left: 190; margin-top: -25;"  >
+                Show more </button>
+              <p class="card-text pt-3">  One of the most famous places in Sharm, it has many restaurants, cafes, markets, and gift shops. </p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+     
+      <div class="background  mt-5"></div>
+     
+      <div  class="mt-4 p-5 text-white rounded" style="background-color: rgb(60, 115, 198); text-shadow: 100 50 50 blue" >
+        <h1 style="text-align: center" class="join">Thanks For</h1>
+      </div>
+      <div class="container py-5 px-lg-0 px-sm-5">
+        <div class="row gap-4 d-flex justify-content-center px-3 px-md-0">
+          <div  class="card xxx col-md-5 col-lg-3 col-12  p-0 overflow-hidden rounded-5 border-0 text-light" >
+            <img  class="card-img-top tt" src="images/ebb59013-1adb-4ef2-a3e3-d3ca666019b7.jpg" alt="Card image"  height="450" style=" border-radius: 20px; background-color: rgba(0, 0, 0,0.3);" />
+            <div class="card-img-overlay ee" style="background-color: rgba(0, 0, 0, 0.4); z-index: 5 ; border-radius: 20px;" >
+              <h4 class="card-title mx-3">All thanks and appreciation</h4>
+              <p class="card-text mx-3">November 3,2024</p>
+              <img  src="images/29c337f6-bea3-46a6-8521-a9a550860498.jpg" class="rounded-circle mx-3" alt="Cinque Terre"  height="150" width="140" style="margin-top: 50px" />
+              <h4 class="card-title mx-3">My husband</h4>
+              <p class="card-text mx-3">My Best supporter in life</p>
+            </div>
+            <div class="mm"></div>
+          </div>
+          <div class="card xxx col-md-5 col-lg-3 col-12  p-0 overflow-hidden rounded-5 border-0 text-light"  >
+            <img class="card-img-top tt" src="images/وظيفة-المرشد-السياحي-thehrtourism.com_.jpg" alt="Card image" height="450" style=" border-radius: 20px; background-color: rgba(0, 0, 0,0.3);"  />
+            <div class="card-img-overlay ee"  style="z-index: 5; background-color: rgba(0, 0, 0, 0.4);  border-radius: 20px;" >
+              <h4 class="card-title mx-3">All thanks and appreciation</h4>
+              <p class="card-text mx-3">
+                <i class="far fa-clock"></i>November 3,2024
+              </p>
+              <img src="images/black-luxury-jeep-driving-road.jpg" class="rounded-circle mx-3" alt="Cinque Terre" height="150" width="140" style="margin-top: 50px" />
+              <h4 class="card-title mx-3">Eman Ali</h4>
+              <p class="card-text mx-3">one of the best Tour guides</p>
+            </div>
+            <div class="mm"></div>
+          </div>
+            <!-- px-sm-2 -->
+          <div class="card xxx col-md-5 col-lg-3 col-12  p-0 overflow-hidden rounded-5 border-0 text-light">  
+            <img class="card-img-top g-0 tt" src="images/hanaa.jpg" alt="Card image" height="450" style=" border-radius: 20px; background-color: rgba(0, 0, 0,0.3);"   />
+            <div  class="card-img-overlay ee" style="background-color: rgba(0, 0, 0, 0.4); z-index: 5; border-radius: 20px;"> 
+            <h4 class="card-title mx-3">All thanks and appreciation</h4>  
+            <p class="card-text mx-3">November 3,2024</p> 
+            <img  src="images/hana.jpg" class="rounded-circle mx-3"  alt="Cinque Terre"  height="150"  width="140"  style="margin-top: 50px" />
+              <h4 class="card-title mx-3">Hanaa Shaban Elgamasy</h4>
+              <p class="card-text mx-3">Communication engineer and fullstack</p>
+            </div>
+            <div class="mm"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end thanks for -->
+  
+      <!-- card 1 -->
+         <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+           <!--  -->
+           <h1 class="text-center join ">The tourist places in ASWAN</h1>
+      <div class="container border dd my-3" style=" border-radius:20px; box-shadow:0px 0px 24px 1px #00fffb ;">
+        <div class="row ppp">
+          <div class="img col-md-4 col-lg-4 nn g-0" style=" clip-path: polygon(0 0,80% 0%,70% 100% ,0% 100%);">
+            <img src="images/mousque.jpg" alt="" height="400" class="img4 " style=" border: 1px solid gray; border-radius:  10px 0px 0px 10px;"/>
+          </div>
+          <div class="content  col-md-8 col-lg-8 py-5 mx-0 ppp">
+            <h3 class="title">Philae Temple</h3>
+            <h5 class="s1-title">
+              <i class="fas fa-calendar-alt"></i> Tues,Oct 29th 2024
+            </h5>
+            <hr class="hr3" />
+  
+            <p class="text">The Temple of Philae is one of the most famous tourist places in Aswan. It is an ancient temple complex dedicated to the goddess Isis, and is a testimony to the greatness of Egyptian architecture.
+  
+              The temple was built during the Ptolemaic Dynasty, and displays magnificent sculptures and hieroglyphics depicting tales of Egyptian mythology. Knowing that the temple was flooded with water, UNESCO dismantled it and rebuilt it again on Agelika Island - which is one of the most famous islands in Aswan. </p>
+            <div class="but" style="width: 110; height: 30; float: left">
+              <i class="fas fa-tag " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+            <div class="but mx-2" style="width: 110; height: 30; float: left">
+              <i class="fas fa-clock " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+            <div class="but nnn" style="width: 110; height: 30; float: left">
+              <i class="fas fa-play " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ///////////////////////////////////////////// -->
+       <!-- card 2 -->
+       <div class="container border dd my-5" style=" border-radius:20px; box-shadow:0px 0px 24px 1px #00fffb ;">
+        <div class="row ccc">
+          <div class="content col-md-9 my-5 mx-0">
+            <h3 class="title">Tabiya Mosque</h3>
+            <h5><i class="fas fa-calendar-alt"></i> Tues,Oct 29th 2024</h5>
+            <hr class="hr33" />
+            <p class="text"> The importance of the Tabia Mosque is not only due to it being one of the most ancient tourist places in Aswan, but rather it was originally one of two military schools in Aswan, and after its construction, its famous minaret became a tourist observation center to which visitors flock to see the entire city of Aswan from above!
+              Indeed, the Tabiya Mosque is a long story that began in 1811. Its story and developments were supervised by many important figures in Egypt, such as Muhammad Ali and Gamal Abdel Nasser.So, feel free to go and take your photo next to this enormous tourist habitat</p>
+            <div class="but" style="width: 110; height: 30; float: left">
+              <i class="fas fa-tag " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+            <div class="but mx-2" style="width: 110; height: 30; float: left">
+              <i class="fas fa-clock " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+            <div class="but bbb" style="width: 110; height: 30; float: left">
+              <i class="fas fa-play " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+          </div>
+          <div class="img col-md-3 ss g-0" style="clip-path: polygon(5% 0,100% 0%,100% 100% ,15% 100%);">
+            <img   src="images/tiba.jpg" alt=""   height="400" width="360" class="img2 col-12" style=" border: 1px solid gray; border-radius: 0px 20px 20px 0px;"  />                                                              
+          </div>
+        </div>
+      </div> 
+  <!-- //////////////////////////////// -->
+      <!-- card 3 -->
+       <div class="container border dd my-5" style=" border-radius:20px; box-shadow:0px 0px 24px 1px #00fffb ;">
+        <div class="row ooo">
+          <div class="img col-md-4 col-lg-4 nn g-0" style=" clip-path: polygon(0 0,80% 0%,70% 100% ,0% 100%);">
+            <img src="images/market.jpg"  alt=""  height="400"  width="380" class="img4 col-12" style=" border: 1px solid gray; border-radius:  10px 0px 0px 10px;" />
+          </div>
+          <div class="content col-md-8 col-lg-8 my-5 mx-0">
+            <h3 class="title">Tourist market in Aswan</h3>
+            <h5><i class="fas fa-calendar-alt"></i> Tues,Oct 29th 2024</h5>
+            <hr class="hr32" />
+            <p class="text">If you want to get to know Aswan up close, you should visit the Tourist Market Street to have the opportunity to learn about local Aswan, southern and Nubian products. What really distinguishes this market is its varying prices, most of which are reasonable.
+  
+              Where you will find many stalls and stalls of embellished folk clothing, dresses, pottery and distinctive accessories, the likes of which you will only find in the city of Aswan.Also, don't let shopping distract you from trying food from popular shops and working secrets that sell traditional food with the best Egyptian flavours </p>
+            <div class="but" style="width: 110; height: 30; float: left">
+              <i class="fas fa-tag " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+            <div class="but mx-2" style="width: 110; height: 30; float: left">
+              <i class="fas fa-clock " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+            <div class="but iii" style="width: 110; height: 30; float: left">
+              <i class="fas fa-play " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!-- ///////////////////////////////////////////// -->
+       <!-- card 4 -->
+      <div class="container border dd my-5" style=" border-radius:20px; box-shadow:0px 0px 24px 1px #00fffb ;">
+        <div class="row ccc">
+          <div class="content col-md-9 my-5 mx-0">
+            <h3 class="title">Elephantine Island</h3>
+            <h5><i class="fas fa-calendar-alt"></i> Tues,Oct 29th 2024</h5>
+            <hr class="hr33"  />
+            <p class="text">
+              Step back in time and discover the history of the southern region of Aswan via Elephantine Island, an archaeological site filled with historical treasures, from ancient temples to the remains of military forts. .Elephantine Island is one of the tourist attractions in Aswan that offers a wonderful glimpse of the Nile temples, where you can discover the Temple of Khnum, dedicated to the ram-headed Nile god.The island is open to visitors throughout the day,
+              There is only a cost to rent a boat to Elephantine Island, and there is no entrance fee to explore the island’s archaeological sites
+            </p>
+            <div class="but" style="width: 110; height: 30; float: left">
+              <i class="fas fa-tag " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+            <div class="but mx-2" style="width: 110; height: 30; float: left">
+              <i class="fas fa-clock " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+            <div class="but bbb" style="width: 110; height: 30; float: left">
+              <i class="fas fa-play " style=" margin-left: 10px;"></i><span>pudcast</span>
+            </div>
+          </div>
+          <div class="img col-md-3 col-lg-3 ss g-0" style="clip-path: polygon(5% 0,100% 0%,100% 100% ,15% 100%);">
+            <img src="images/flip.jpg" alt=""  height="400" width="360" class="img2 col-12" style=" border: 1px solid gray; border-radius: 0px 20px 20px 0px;" />
+          </div>
+        </div>
+      </div> 
+      <!-- ////////////////////////////////////////////////////////////// -->
+       <div class="container  py-3 my-5 display-flex flex-column flex-md-row " style="box-shadow: 1px 1px 20px 10px gray;">
+        <div class="row gap-5 mt-3 d-flex justify-content-center  ">
+          <h2 class="text-center join" style="font-size: 50px;">JOIN US</h2>
+          
+          <div class="content col-md-2   col-6 py-col-0 ">
+            <h3 class="text-center py-3">Subscribe Now</h3>
+            <div class="jpg col-12  " style="box-shadow: 3px 3px 20px 20px gray;border-radius: 70px;">
+            <img src="images/twitter.jpg" alt="" class=" " style="border-radius: 60px; width: 200px;">
+          </div>
+          <h4 class="text-center py-5">Go to Link</h4>
+          </div>
+          <div class="content   col-md-2 col-6 ">
+            <h3 class="text-center py-3 ">Follow</h3>
+            <div class="jpg   " style="box-shadow: 3px 3px 20px 20px gray;border-radius: 70px;">
+            <img src="images/insta.jpg" alt="" class=" " style="border-radius: 60px; width: 200px;">
+          </div>
+          <h4 class="text-center  py-5">Go to Link</h4>
+          </div>
+          <div class="content  col-md-2 col-6">
+            <h3 class="text-center py-3 ">watch vedios</h3>
+            <div class="jpg   " style="box-shadow: 3px 3px 20px 20px gray;border-radius: 70px;">
+            <img src="images/what.jpg" alt="" class=" " style="border-radius: 60px; width: 200px;">
+          </div>
+          <h4 class="text-center  py-5">Go to Link</h4>
+          </div>
+          <div class="content  col-md-2 col-6">
+            <h3 class="text-center py-3 ">Like the page</h3>
+            <div class="jpg   " style="box-shadow: 3px 3px 20px 20px gray;border-radius: 70px;">
+            <img src="images/link.jpg" alt="" class=" " style="border-radius: 60px; width: 200px;">
+          </div>
+          <h4 class="text-center  py-5">Go to Link</h4>
+          </div>
+        </div>
+      </div>
+       <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="container-fluid" style="background-color: rgb(60, 115, 198)">
+        <div class="row">
+          <div class="cont col-lg-4 mx-2">
+            <hr class="hr1" style="width: 470; border:2px solid blue;" />
+            <div class="row">
+              <div class="img99 col-lg-4">
+                <img  src="images/logo.jpg"  alt=""  width="100" height="100"  class="rounded-circle mx-3"  />
+              </div>
+              <div class="para col-lg-8 my-3"><h2>Good Company</h2></div>
+            </div>
+            <hr class="hr1" style="width: 490;  border:2px solid blue;" />
+            <div class="content mx-5 pl-5 text-center">
+              <p>Tel : 000-000-000</p>
+              <p>Address :EGYPT</p>
+              <p>Fax : 000-000-000</p>
+            </div>
+          </div>
+  
+          <div class="cont col-lg-4 mx-2">
+            <hr class="hr1" style="width: 490; border:2px solid blue;" />
+            <div class="row">
+              <div class="img99 col-lg-4">
+                <img src="images/logo.jpg" alt=""  width="100" height="100"  class="rounded-circle mx-3" />
+              </div>
+              <div class="para col-lg-8 my-3"><h2>Important links</h2></div>
+            </div>
+            <hr class="hr1" style="width: 490; border:2px solid blue;" />
+            <div class="content mx-5 text-center text-light">
+              <p>visit us</p>
+              <p>Take alook</p>
+              <p>Your health is more important</p>
+            </div>
+          </div>
+          <!-- ////////////////////////////////// -->
+          <div class="cont col-lg-3 mx-1">
+            <hr class="hr1" style="width: 450; border:2px solid blue;" />
+            <div class="row">
+              <div class="img99 col-lg-4">
+                <img  src="images/logo.jpg"  alt=""  width="100"  height="100"  class="rounded-circle mx-4"/>
+              </div>
+              <div class="para col-lg-8 my-3 " ><h2>Vision</h2></div>
+            </div>
+            <hr class="hr1" style="width: 450; border:2px solid blue;" />
+            <div class="content mx-5 pl-5 text-center">
+              <p>Serveices for all</p>
+              <p>Provide best serveices</p>
+              <p>your will be better than before</p>
+            </div>
+            <!-- <hr class="hr-final"> -->
+          </div>
+          <hr class="hr-final"  style=" border:2px solid blue;">
+        </div>
+      </div>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+       <!-- <hr class="hr-final"> -->
+      <div
+      
+        class="mt-0 p-3 text-primary " style="background-color: rgb(60, 115, 198);  " >
+        <h3 class="text-center  join" >  All rights reserved © 2011-2023, Sun&Sea Travel </h3>
+        <hr class="hr-final " style=" border:2px solid blue;">
+      </div> 
+     
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+   
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"> </script>
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+  
+    </body>
+  </html>
